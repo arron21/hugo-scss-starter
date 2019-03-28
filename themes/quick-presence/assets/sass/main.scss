@@ -1,0 +1,38 @@
+$red: #fc0;
+.red {
+  color: $red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.home-bg {
+  background-image: url('/img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 10vmin;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  }
+  h2 {
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    font-size: 3vmin;
+
+  }
+}
+
+
+code {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+@import 'nav';
+@import 'font';

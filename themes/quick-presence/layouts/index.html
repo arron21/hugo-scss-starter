@@ -1,0 +1,129 @@
+
+{{ partial "head.html" . }}
+
+{{ partial "nav.html" . }}
+
+
+<main class="home-bg h-screen flex items-center content-center" id="home">
+  <div class="flex-1 flex flex-col items-center content-center">
+
+    <h1 class="text-center mb-5 text-white ">Quick Presence</h1>
+    <h2 class="text-center mb-5 text-white font-hairline">simple html template for getting your presence online fast</h2>
+    <button class="bg-teal hover:bg-teal-lightest hover:text-teal text-white font-semibold py-2 px-4 rounded shadow">
+      Button
+    </button>
+    <img data-action="zoom" style="width: 200px;" class="object-contain" src="https://images.pexels.com/photos/1726310/pexels-photo-1726310.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+    <img data-action="zoom" style="width: 200px;" class="object-contain" src="https://via.placeholder.com/550" />
+
+  </div>
+  
+</main>
+<section class="h-screen flex items-center content-center" id="features">
+  <div class="flex-1">
+    
+    <h1 class="text-center text-5xl mb-5">Template Features</h1>
+    <h2 class="text-center text-xl mb-5 font-hairline">Exactly what You Need, Nothing more, Nothing less.</h2>
+    <h2 class="text-center ">Built ontop of <a href="https://tailwindcss.com/" class="text-teal" target="_blank">Tailwind.css</a></h2>
+   </div>
+</section>
+
+<section id="performance" class="h-screen flex items-center content-center" >
+  <div class="container mx-auto">
+    <div class="flex">
+      <div class="flex-1">
+
+        <figure>
+        <img class="object-contain" src="https://images.pexels.com/photos/2030422/pexels-photo-2030422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+        </figure>
+      </div>
+      <div class="flex-1 p-4">
+        <h3 class="font-semibold text-4xl text-center border-b-2 mb-5">Performance</h3>
+        <p>This theme is built to be as lightweight as possible.</p>
+        <p>It scores a 95+ Performance score using Google's Lighthouse Audit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="h-screen flex items-center content-center">
+    <div class="container mx-auto flex items-center content-center">
+        <div class="flex items-center content-center">
+          <div class="flex-1">
+              <h3 class="font-semibold text-4xl text-center border-b-2 mb-5">Performance</h3>
+              <p>This theme is built to be as lightweight as possible.</p>
+              <p>It scores a 95+ Performance score using Google's Lighthouse Audit.</p>
+          </div>
+          <div class="">
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="https://images.pexels.com/photos/2016999/pexels-photo-2016999.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/2019005/pexels-photo-2019005.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />                     
+                    </div>                  
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/2029843/pexels-photo-2029843.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />                     
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.pexels.com/photos/825864/pexels-photo-825864.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />                     
+                    </div>
+                    
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <style>
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        .swiper-slide img {
+          max-width: 100%;
+        }
+      </style>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function(){
+          var swiper = new Swiper('.swiper-container');
+        });
+      </script>
+</section>
+<section id="design" class="h-screen flex items-center content-center" >
+    <div class="container mx-auto">
+      <div class="flex">
+        <div class="flex-1 p-4">
+          <h3 class="font-semibold text-4xl text-center border-b-2 mb-5">Zoom Images</h3>
+          <p>Clicking on these images enlarges them for easy viewing. Simply add <code>data-action="zoom"</code> to any <code>&lt;img&gt;</code> tag in your HTML and it will zoom.</p>
+          <p>Example: <code>&lt;img src="assets/img/new-zealand-lake-mountain-landscape-37650.jpg" data-action="zoom"  /&gt;</code></p>
+        </div>
+        <div class="flex-1">
+            
+          <figure>
+          
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
